@@ -10,12 +10,13 @@ $sayHello("ridlo");
 
 // use anonymous function as a argument
 
-function sayGoodBay(string $name, $filter){
+function sayGoodBay(string $name, $filter)
+{
   $finalName = $filter($name);
   echo "Good bay $finalName" . PHP_EOL;
 };
 
-sayGoodBay("Ridlo", function(string $name){
+sayGoodBay("Ridlo", function (string $name) {
   return strtoupper($name);
 });
 
@@ -26,7 +27,7 @@ sayGoodBay("Ridlo", function(string $name){
 $firstName = "ridlo";
 $lastName = "ghifary";
 
-$saySomehing = function () use ($firstName, $lastName){
+$saySomehing = function () use ($firstName, $lastName) {
   echo "Hallo $firstName $lastName" . PHP_EOL;
 };
 

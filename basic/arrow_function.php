@@ -8,6 +8,6 @@
 $firstName = "ridlo";
 $lastName = "ghifary";
 
-$sayHello = fn() => "Hello $firstName $lastName";
+$sayHello = fn () => "Hello $firstName $lastName";
 
 echo $sayHello() . PHP_EOL;
