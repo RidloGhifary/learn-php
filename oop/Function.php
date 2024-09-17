@@ -2,7 +2,6 @@
 
 require_once "./data/Person.php";
 
-$person = new Person();
-$person->name = "Ridlo";
+$person = new Person("Ridlo", "Jakarta");
 $person->sayHello("Ridlo");
 $person->info();

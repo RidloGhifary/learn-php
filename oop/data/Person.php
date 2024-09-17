@@ -8,6 +8,12 @@ class Person
   var ?string $city = null;
   var string $country = "Indonesia";
 
+  public function __construct(string $name, ?string $city)
+  {
+    $this->name = $name;
+    $this->city = $city;
+  }
+
   function sayHello(?string $name)
   {
     if (is_null($name)) {
