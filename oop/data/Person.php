@@ -5,13 +5,18 @@ class Person
   const AUTHOR = "Ridlo achmad ghifary";
 
   var string $name;
-  var ?string $city = null;
+  var ?string $city;
   var string $country = "Indonesia";
 
-  public function __construct(string $name, ?string $city)
+  public function __construct(string $name, ?string $city = null)
   {
     $this->name = $name;
     $this->city = $city;
+  }
+
+  function __destruct()
+  {
+    echo "Object person $this->name is destroyed" . PHP_EOL;
   }
 
   function sayHello(?string $name)
