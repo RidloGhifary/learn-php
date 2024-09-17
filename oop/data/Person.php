@@ -2,6 +2,8 @@
 
 class Person
 {
+  const AUTHOR = "Ridlo achmad ghifary";
+
   var string $name;
   var ?string $city = null;
   var string $country = "Indonesia";
