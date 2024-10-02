@@ -14,4 +14,6 @@ try {
   echo "Validation passed" . PHP_EOL;
 } catch (ValidateException | Exception $exception) {
   echo "Validation error: {$exception->getMessage()}" . PHP_EOL;
+} finally {
+  echo "Login process done" . PHP_EOL;
 }
