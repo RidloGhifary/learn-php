@@ -21,7 +21,7 @@ $helloWorld->sayHello("Alice"); // Outputs: Hello Alice
 $helloWorld2 = new class("Ridlo") implements HelloWorld
 {
 
-  public string? $name;
+  public string $name;
 
   public function __construct(string $name)
   {

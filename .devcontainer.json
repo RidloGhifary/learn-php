@@ -1,0 +1,11 @@
+{
+  "name": "PHP 8.2 Development",
+  "dockerFile": "Dockerfile",
+  "extensions": [
+    "bmewburn.vscode-intelephense-client" // PHP Intelephense for PHP language support
+  ],
+  "settings": {
+    "php.validate.executablePath": "/usr/local/bin/php" // Path to PHP in your Docker container
+  },
+  "postCreateCommand": "composer install"
+}

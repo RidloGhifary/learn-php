@@ -2,12 +2,13 @@
 
 class SocialMedia
 {
-  public string? $nama;
+  public string $nama;
 }
 
 class Facebook extends SocialMedia
 {
-  final public function login(): bool{
+  final public function login(): bool
+  {
     return true;
   }
 };
@@ -15,7 +16,8 @@ class Facebook extends SocialMedia
 final class Instagram extends SocialMedia
 {
   // Error function
-  public function login(): bool{
+  public function login(): bool
+  {
     return false;
   }
 };
