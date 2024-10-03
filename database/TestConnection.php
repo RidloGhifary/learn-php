@@ -9,6 +9,9 @@ $password = "1234Ridlo";
 try {
   $connection = new PDO("mysql:host=$host:$port;dbname=$database", $username, $password);
   echo "Connection Success" . PHP_EOL;
+
+  // Close Connection
+  $connection = null;
 } catch (PDOException $e) {
-  echo "Connection Error : $e" . PHP_EOL;
+  echo "Connection Error : {$e->getMessage()}" . PHP_EOL;
 }
