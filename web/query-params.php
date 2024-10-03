@@ -1,12 +1,13 @@
 <?php
 
-$params = isset($_GET["first-name"]) && isset($_GET["last-name"])
-  ? $_GET["first-name"] . " " . $_GET["last-name"]
+$params = isset($_GET["first-name"]) || isset($_GET["last-name"])
+  ? htmlspecialchars($_GET["first-name"]) . " " . htmlspecialchars($_GET["last-name"])
   : null;
 
 $numbers = isset($_GET['numbers']) ? $_GET['numbers'] : [];
 $total = 0;
-$math = ""; // This will store the formula (e.g., 1 + 2 + 3 + 4)
+$math = "";
+$calculate = $math . $total ? $total : null;
 
 foreach ($numbers as $key => $number) {
   $total += $number; // Sum the numbers
@@ -32,7 +33,7 @@ error_log("Params: " . print_r($params, true));
 
 <body>
   <p><?= $say ?></p>
-  <p><?= $math ?> = <?= $total ?></p>
+  <p><?= $calculate ?></p>
 
   <script>
     // Use PHP to output the value in JavaScript
