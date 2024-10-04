@@ -14,6 +14,9 @@
             "RidloGhifary\\": "src/"
         }
     },
+    "scripts": {
+        "run-web":"php -S localhost:8000"
+    },
     "require": {
         "monolog/monolog": "3.7.0"
     }
