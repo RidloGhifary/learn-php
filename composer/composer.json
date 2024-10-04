@@ -1,0 +1,13 @@
+{
+    "name": "ridloghfry/learn-php-composer",
+    "description": "Learn PHP Composer",
+    "type": "project",
+    "license": "none",
+    "authors": [
+        {
+            "name": "Ridlo Achmad Ghifary",
+            "email": "ridloghfry@gmail.com"
+        }
+    ],
+    "require": {}
+}
