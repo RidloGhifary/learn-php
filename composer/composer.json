@@ -9,5 +9,10 @@
             "email": "ridloghfry@gmail.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "RidloGhifary\\": "src/"
+        }
+    },
     "require": {}
 }
