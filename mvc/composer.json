@@ -17,12 +17,12 @@
     },
     "autoload": {
         "psr-4": {
-            "RidloAchmadGhfiary\\Learn\\PHP\\MVC\\": "app"
+            "RidloAchmadGhifary\\Learn\\PHP\\MVC\\": "app/"
         }
     },
     "autoload-dev": {
          "psr-4": {
-            "RidloAchmadGhfiary\\Learn\\PHP\\MVC\\": "test"
+            "RidloAchmadGhifary\\Learn\\PHP\\MVC\\": "test"
         }
     }
 }
